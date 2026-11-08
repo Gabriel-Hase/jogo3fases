@@ -1,0 +1,106 @@
+	/* pedir a jogada de ambos os jogadores, depois comparar elas e mostrar o vencedor
+		 * somar os pontos
+		 * passar ara as perguntas
+		 * */
+package jogo3fases;
+import javax.swing.JOptionPane;
+public class fases {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String nomes [] = new String [2];
+		int n1=0;
+		String part="";
+		String con="";
+		int jogada1, jogada2;
+		int p1=0, p2=0;
+		int p3=0;
+		String nmnv=null;
+		String resp [] = new String [4];
+		
+		for (int c=0; c<2; c++) {
+			
+			
+			nomes [c] = JOptionPane.showInputDialog("Informe o nome do participante " + (c+1) + ":");
+			n1++;
+			
+			part = part + " " + n1 + "." + nomes [c];
+			
+		}
+		
+		JOptionPane.showMessageDialog(null, "Os participantes são: " + part);
+		JOptionPane.showMessageDialog(null, "O jogo é pedra, papel e tesoura; será melhor de 3.");
+		
+		for (int c=0; c<3; c++) {
+			JOptionPane.showMessageDialog(null, "Rodada " + (c+1) + ":");	
+		
+			jogada1=Integer.parseInt(JOptionPane.showInputDialog("Digite sua jogada, " + nomes[0] + ": (1 para pedra, 2 para papel e 3 para tesoura)" ));
+	        jogada2=Integer.parseInt(JOptionPane.showInputDialog("Digite sua jogada, " + nomes[1] + ": (1 para pedra, 2 para papel e 3 para tesoura)"));
+
+	        if (jogada1==1 && jogada2==2 || jogada1==2 && jogada2==3 || jogada1==3 && jogada2==1) {
+	        	
+	        	JOptionPane.showMessageDialog(null, nomes[1] + " venceu!");
+	        	p2 = p2+15;
+	        }
+	        
+	        else if (jogada1==1 && jogada2==3 || jogada1==2 && jogada2==1 || jogada1==3 && jogada2==2) {
+	        	JOptionPane.showMessageDialog(null, nomes[0] + " venceu!");
+	        	p1+=15;
+	        }
+	        
+	        else {
+	        	JOptionPane.showMessageDialog(null, "Empate!");
+	        }
+		}
+		
+		if (p1>p2) {
+			
+			JOptionPane.showMessageDialog(null, nomes[0] + " é o vencedor!");
+			JOptionPane.showMessageDialog(null, nomes[0] + " tem " + p1 + " pontos.");
+			p3 = p1;
+			nmnv= nomes[0];
+		}
+		
+		else if (p1<p2) {
+			JOptionPane.showMessageDialog(null, nomes[1] + " é o vencedor!");
+			JOptionPane.showMessageDialog(null, nomes[1] + " tem " + p2 + " pontos.");
+			p3 = p2;
+			nmnv=nomes[0];
+		}
+		
+		else {
+			JOptionPane.showMessageDialog(null, "O jogo empatou.");
+			System.exit(0);
+		}
+		
+		//FASE 2 COMEÇA AQUIIIIIIIIIIIII!!!!!!!!!!!!!//
+		
+		
+		JOptionPane.showMessageDialog(null, nmnv + ", você chegou a fase 2.");
+		JOptionPane.showMessageDialog(null, "A fase 2 será um jogo de perguntas e respostas,"
+				+ " onde para digitar sua resposta, você deverá digitar apenas a letra da alternativa.");
+		JOptionPane.showMessageDialog(null, "As perguntas serão sobre JAVA, cada questão vale 15 pontos, e você precisa de 60 pontos para passar para a fase 3.");
+		JOptionPane.showMessageDialog(null, "Seus pontos atuais: " + p3);
+		
+		
+		JOptionPane.showMessageDialog(null, "pergunta");
+		resp [0]=JOptionPane.showInputDialog("alternativas");
+		
+		
+		JOptionPane.showMessageDialog(null, "pergunta");
+		resp [0]=JOptionPane.showInputDialog("alternativas");
+		
+		
+		JOptionPane.showMessageDialog(null, "pergunta");
+		resp [0]=JOptionPane.showInputDialog("alternativas");
+		
+		
+		JOptionPane.showMessageDialog(null, "pergunta");
+		resp [0]=JOptionPane.showInputDialog("alternativas");
+		
+		
+		JOptionPane.showMessageDialog(null, "pergunta");
+		resp [0]=JOptionPane.showInputDialog("alternativas");
+
+	}}
