@@ -43,8 +43,7 @@ public class fases {
 			
 		}
 		
-		JOptionPane.showMessageDialog(null, "Os participantes são: " + part);
-		JOptionPane.showMessageDialog(null, "O jogo é pedra, papel e tesoura; será melhor de 3.");
+		JOptionPane.showMessageDialog(null, "Os participantes são: " + part + "\n O jogo é pedra, papel e tesoura; será melhor de 3.");
 		
 		for (int c=0; c<3; c++) {
 			JOptionPane.showMessageDialog(null, "Rodada " + (c+1) + ":");	
@@ -70,7 +69,7 @@ public class fases {
 		
 		if (p1>p2) {
 			
-			JOptionPane.showMessageDialog(null, nomes[0] + " é o vencedor!");
+			JOptionPane.showMessageDialog(null, nomes[0] + " é o(a) vencedor(a)!");
 			JOptionPane.showMessageDialog(null, nomes[0] + " tem " + p1 + " pontos.");
 			p3 = p1;
 			p5=p2;
@@ -79,7 +78,7 @@ public class fases {
 		}
 		
 		else if (p1<p2) {
-			JOptionPane.showMessageDialog(null, nomes[1] + " é o vencedor!");
+			JOptionPane.showMessageDialog(null, nomes[1] + " é o(a) vencedor(a)!");
 			JOptionPane.showMessageDialog(null, nomes[1] + " tem " + p2 + " pontos.");
 			p3 = p2;
 			p5=p1;
@@ -96,14 +95,12 @@ public class fases {
 		
 		
 		
-		JOptionPane.showMessageDialog(null, nmnv + ", você chegou a fase 2.");
-		JOptionPane.showMessageDialog(null, "A fase 2 será um jogo de perguntas e respostas,"
-				+ " onde para digitar sua resposta, você deverá digitar apenas a letra da alternativa.");
-		JOptionPane.showMessageDialog(null, "As perguntas serão sobre JAVA, cada questão vale 15 pontos, e você precisa de 60 pontos para passar para a fase 3.");
-		JOptionPane.showMessageDialog(null, "Seus pontos atuais: " + p3);
+		JOptionPane.showMessageDialog(null, nmnv + ", você chegou a fase 2. \n A fase 2 será um jogo de perguntas e respostas, onde para digitar sua resposta, você deverá digitar apenas a letra da alternativa."
+				+ "\n As perguntas serão sobre JAVA, cada questão vale 15 pontos, e você precisa de 60 pontos para passar para a fase 3."
+				+ "\n Seus pontos atuais: " + p3);
 		
 		
-		resp [0]=JOptionPane.showInputDialog("Qual o nome do mascote da programação JAVA? \n A.Ferris. B.Duke. C.Tux.");
+		resp [0]=JOptionPane.showInputDialog("Qual o nome do mascote da programação JAVA? \n A) Ferris. B) Duke. C) Tux.");
 		
 		if(resp[0].equalsIgnoreCase("b")) {
 			JOptionPane.showMessageDialog(null, "resposta correta");
@@ -116,8 +113,8 @@ public class fases {
 		
 		//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 		
-		JOptionPane.showMessageDialog(null, "Para que serve o comando 'JOptionPane.showMessageDialog?'");
-		resp [1]=JOptionPane.showInputDialog("A.Fazer um diálogo entre 2 usuários. B.Mostrar opcões para o usuário escolher. C.Mostrar uma mensagem ao usuário.");
+		
+		resp [1]=JOptionPane.showInputDialog("Para que serve o comando 'JOptionPane.showMessageDialog?' \n A) Fazer um diálogo entre 2 usuários. B) Mostrar opcões para o usuário escolher. C) Mostrar uma mensagem ao usuário.");
 		
 		if(resp[1].equalsIgnoreCase("c")) {
 			JOptionPane.showMessageDialog(null, "resposta correta");
@@ -131,10 +128,10 @@ public class fases {
 		
 		//bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 		
-		JOptionPane.showMessageDialog(null, "Para que serve os chamados 'Arrays' no JAVA?");
-		resp [2]=JOptionPane.showInputDialog("A.Armazenar várias varíaveis de um mesmo tipo. "
-				+ "B.Armazenar várias varíaveis de tipos diferentes."
-				+ " C.Somar todas as varíaveis INT inseridas nele.");
+		
+		resp [2]=JOptionPane.showInputDialog("Para que serve os chamados 'Arrays' no JAVA? \n A) Armazenar várias varíaveis de um mesmo tipo. "
+				+ "B) Armazenar várias varíaveis de tipos diferentes."
+				+ " C) Somar todas as varíaveis INT inseridas nele.");
 		
 		if(resp[2].equalsIgnoreCase("a")) {
 			JOptionPane.showMessageDialog(null, "resposta correta");
@@ -148,8 +145,8 @@ public class fases {
 		
 		//ccccccccccccccccccccccccccccccc
 		
-		JOptionPane.showMessageDialog(null, "Quando esta linguagem de programação foi oficialmente lançada?");
-		resp [3]=JOptionPane.showInputDialog("A.1991 B.1988 C.1995");
+		
+		resp [3]=JOptionPane.showInputDialog("Quando esta linguagem de programação foi oficialmente lançada? \n A) 1991 B) 1988 C) 1995");
 		
 		if(resp[3].equalsIgnoreCase("c")) {
 			JOptionPane.showMessageDialog(null, "resposta correta");
@@ -163,8 +160,8 @@ public class fases {
 		
 		//ddddddddddddddddddddddd
 		
-		JOptionPane.showMessageDialog(null, "Qual é a expressão correta para utiliar um 'Array'?");
-		resp [4]=JOptionPane.showInputDialog("A.'tipo nome [] = new tipo [numero]' B.'nome [tipo] = new nome []' C.'tipo [] = nome[numero]");
+		
+		resp [4]=JOptionPane.showInputDialog("Qual é a expressão correta para utiliar um 'Array'? \n A) 'tipo nome [] = new tipo [numero]' B) 'nome [tipo] = new nome []' C) 'tipo [] = nome[numero]");
 
 		if(resp[4].equalsIgnoreCase("a")) {
 			JOptionPane.showMessageDialog(null, "resposta correta");
@@ -187,17 +184,16 @@ public class fases {
 		//A FASE 3 COMEÇA AQUIIIIIIIIII!!!!!!!!!!
 		
 		else {
-			JOptionPane.showMessageDialog(null, nmnv + " chegou a fase 3.");
-			JOptionPane.showMessageDialog(null, "A fase 3 será um jogo de perguntas e respostas,"
-					+ " onde para digitar sua resposta, você deverá digitar apenas a letra da alternativa.");
-			JOptionPane.showMessageDialog(null, "As perguntas serão sobre o anime 'Diário de uma apotecaria' e da franquia 'Godzilla'. cada questão valerá 15 pontos.");
-			JOptionPane.showMessageDialog(null, "Seus pontos atuais: " + p3);	
+			JOptionPane.showMessageDialog(null, nmnv + " chegou a fase 3. \n A fase 3 será um jogo de perguntas e respostas, onde para digitar sua resposta, você deverá digitar apenas a letra da alternativa."
+					+ "\n As perguntas serão sobre o anime 'Diário de uma apotecaria' e da franquia 'Godzilla'. cada questão valerá 15 pontos. "
+					+ "\n Seus pontos atuais: " + p3);
+			
 		}
 
-		JOptionPane.showMessageDialog(null, "pergunta1");
-		resp [0]=JOptionPane.showInputDialog("alternativas");
 		
-		if(resp[0].equalsIgnoreCase("c")) {
+		resp [0]=JOptionPane.showInputDialog("Qual é o nome da mãe de Maomao? \n A) Loulan, B) Fengxian, C) Pairin");
+		
+		if(resp[0].equalsIgnoreCase("b")) {
 			JOptionPane.showMessageDialog(null, "resposta correta");
 			p4=p3+15;
 			p3=p4;
@@ -208,8 +204,8 @@ public class fases {
 		
 		//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 		
-		JOptionPane.showMessageDialog(null, "pergunta2");
-		resp [1]=JOptionPane.showInputDialog("alternativas");
+		
+		resp [1]=JOptionPane.showInputDialog("Qual o nome da concubina que pariu o filho do imperador? \n A) Ah-Duo, B) Anshi C) Gyokuyou");
 		
 		if(resp[1].equalsIgnoreCase("a")) {
 			JOptionPane.showMessageDialog(null, "resposta correta");
@@ -223,80 +219,8 @@ public class fases {
 		
 		//bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 		
-		JOptionPane.showMessageDialog(null, "pergunta3");
-		resp [2]=JOptionPane.showInputDialog("alternativas");
 		
-		if(resp[2].equalsIgnoreCase("b")) {
-			JOptionPane.showMessageDialog(null, "resposta correta");
-			p4=p3+15;
-			p3=p4;
-		}
-		
-		else {
-			JOptionPane.showMessageDialog(null, "resposta errada");
-		}
-		
-		//ccccccccccccccccccccccccccccccc
-		
-		JOptionPane.showMessageDialog(null, "pergunta4");
-		resp [3]=JOptionPane.showInputDialog("alternativas");
-		
-		if(resp[3].equalsIgnoreCase("b")) {
-			JOptionPane.showMessageDialog(null, "resposta correta");
-			p4=p3+15;
-			p3=p4;
-		}
-		
-		else {
-			JOptionPane.showMessageDialog(null, "resposta errada");
-		}
-		
-		//ddddddddddddddddddddddd
-		
-		JOptionPane.showMessageDialog(null, "pergunta5");
-		resp [4]=JOptionPane.showInputDialog("alternativas");
-
-		if(resp[4].equalsIgnoreCase("c")) {
-			JOptionPane.showMessageDialog(null, "resposta correta");
-			p4=p3+15;
-			p3=p4;
-		}
-		
-		else {
-			JOptionPane.showMessageDialog(null, "resposta errada");	
-		}
-		
-		JOptionPane.showMessageDialog(null, "Quando lançou o primeiro filme da franquia 'Godzilla'?");
-		resp [0]=JOptionPane.showInputDialog("A.1954 B.1965 C.1984");
-		
-		if(resp[0].equalsIgnoreCase("a")) {
-			JOptionPane.showMessageDialog(null, "resposta correta");
-			p4=p3+15;
-			p3=p4;
-					}
-		else {
-			JOptionPane.showMessageDialog(null, "resposta errada");
-		}
-		
-		//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-		
-		JOptionPane.showMessageDialog(null, "Qual o PRIMEIRO monstro que enfrentou godzilla nos filmes?");
-		resp [1]=JOptionPane.showInputDialog("A.Anguirus B.King Ghidorah C.Mothra");
-		
-		if(resp[1].equalsIgnoreCase("a")) {
-			JOptionPane.showMessageDialog(null, "resposta correta");
-			p4=p3+15;
-			p3=p4;
-		}
-		
-		else {
-			JOptionPane.showMessageDialog(null, "resposta errada");
-		}
-		
-		//bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-		
-		JOptionPane.showMessageDialog(null, "Qual filme foi lançado nos 50 anos da franquia 'Godzilla'?");
-		resp [2]=JOptionPane.showInputDialog("A.Godzilla Minus One. B.Godzilla: Destroy all Monsters. C.Godzilla: Final Wars");
+		resp [2]=JOptionPane.showInputDialog("Qual o nome da FILHA do atual imperador? \n A) Loulan B) Maomao C) Lingli");
 		
 		if(resp[2].equalsIgnoreCase("c")) {
 			JOptionPane.showMessageDialog(null, "resposta correta");
@@ -310,8 +234,79 @@ public class fases {
 		
 		//ccccccccccccccccccccccccccccccc
 		
-		JOptionPane.showMessageDialog(null, "Quantos FILMES Godzilla já teve?");
-		resp [3]=JOptionPane.showInputDialog("A.23 B.39 C.32");
+		
+		resp [3]=JOptionPane.showInputDialog("Qual o verdadeiro nome de Jinshi? \n A)Ka Zuigetsu B) Jinshi C) Lihaku");
+		
+		if(resp[3].equalsIgnoreCase("a")) {
+			JOptionPane.showMessageDialog(null, "resposta correta");
+			p4=p3+15;
+			p3=p4;
+		}
+		
+		else {
+			JOptionPane.showMessageDialog(null, "resposta errada");
+		}
+		
+		//ddddddddddddddddddddddd
+		
+		
+		resp [4]=JOptionPane.showInputDialog("Quem foi a principal responsável pela rebelião do clã Shi? \n A) Shenmei B) Shisui C) Joka");
+
+		if(resp[4].equalsIgnoreCase("b")) {
+			JOptionPane.showMessageDialog(null, "resposta correta");
+			p4=p3+15;
+			p3=p4;
+		}
+		
+		else {
+			JOptionPane.showMessageDialog(null, "resposta errada");	
+		}
+	
+		resp [0]=JOptionPane.showInputDialog("Quando lançou o primeiro filme da franquia 'Godzilla'? \n A.1954 B.1965 C.1984");
+		
+		if(resp[0].equalsIgnoreCase("a")) {
+			JOptionPane.showMessageDialog(null, "resposta correta");
+			p4=p3+15;
+			p3=p4;
+					}
+		else {
+			JOptionPane.showMessageDialog(null, "resposta errada");
+		}
+		
+		//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+		
+
+		resp [1]=JOptionPane.showInputDialog("Qual o PRIMEIRO monstro que enfrentou godzilla nos filmes? \n A.Anguirus B.King Ghidorah C.Mothra");
+		
+		if(resp[1].equalsIgnoreCase("a")) {
+			JOptionPane.showMessageDialog(null, "resposta correta");
+			p4=p3+15;
+			p3=p4;
+		}
+		
+		else {
+			JOptionPane.showMessageDialog(null, "resposta errada");
+		}
+		
+		//bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+		
+		
+		resp [2]=JOptionPane.showInputDialog("Qual filme foi lançado nos 50 anos da franquia 'Godzilla'? \n A.Godzilla Minus One. B.Godzilla: Destroy all Monsters. C.Godzilla: Final Wars");
+		
+		if(resp[2].equalsIgnoreCase("c")) {
+			JOptionPane.showMessageDialog(null, "resposta correta");
+			p4=p3+15;
+			p3=p4;
+		}
+		
+		else {
+			JOptionPane.showMessageDialog(null, "resposta errada");
+		}
+		
+		//ccccccccccccccccccccccccccccccc
+		
+	
+		resp [3]=JOptionPane.showInputDialog("Quantos FILMES Godzilla já teve? \n A.23 B.39 C.32");
 		
 		if(resp[3].equalsIgnoreCase("b")) {
 			JOptionPane.showMessageDialog(null, "resposta correta");
@@ -325,8 +320,8 @@ public class fases {
 		
 		//ddddddddddddddddddddddd
 		
-		JOptionPane.showMessageDialog(null, "Qual o nome da versão espacial de Godzilla?");
-		resp [4]=JOptionPane.showInputDialog("A.GalactGodzilla B.Cosmozilla C.SpaceGodzilla");
+
+		resp [4]=JOptionPane.showInputDialog("Qual o nome da versão espacial de Godzilla? \n A.GalactGodzilla B.Cosmozilla C.SpaceGodzilla");
 
 		if(resp[4].equalsIgnoreCase("c")) {
 			JOptionPane.showMessageDialog(null, "resposta correta");
@@ -338,10 +333,8 @@ public class fases {
 			JOptionPane.showMessageDialog(null, "resposta errada");	
 		}
 		
-		JOptionPane.showMessageDialog(null, nmnv + ", você tem " + p3 + " pontos!");
-		
-		
-		rf=JOptionPane.showInputDialog("Deseja recomeçar o jogo? (S ou N)");
+	
+		rf=JOptionPane.showInputDialog(nmnv + ", você tem " + p3 + " pontos!" + " \n Deseja recomeçar o jogo? (S ou N)");
 		
 		
 		
@@ -349,9 +342,7 @@ public class fases {
 		
 		while(rf.equalsIgnoreCase("s")); {
 			
-			JOptionPane.showMessageDialog(null, "Jogo encerrado! segue a seguir a pontuação dos jogadores:");
-			JOptionPane.showMessageDialog(null, nmnv + " tem " + p3 + " pontos.");
-			JOptionPane.showMessageDialog(null, nmp + " tem " + p5 + " pontos.");
+			JOptionPane.showMessageDialog(null, "Jogo encerrado! segue a seguir a pontuação dos jogadores: \n" + nmnv + " tem " + p3 + " pontos. \n" + nmp + " tem " + p5 + " pontos.");
 			System.exit(0);
 		}
 		
